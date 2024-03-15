@@ -52,10 +52,6 @@ header{
     padding:20px;
     background-color: var(#ffffff);
 }
-article{
-    position:absolute;
-    opacity: 20%;
-}
 p{
     padding:25px;
 }
