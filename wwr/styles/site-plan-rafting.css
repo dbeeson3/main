@@ -1,10 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Truculenta:opsz,wght@12..72,100..900&display=swap');
+:root{
+    --primary-color: #05668d;
+    --secondary-color: #00a896;
+    --accent1-color: #244f26;
+    --accent2-color: #cae9ff;
 
+    --heading-font:"roboto", serif;
+    --paragraph-font:"roboto", serif;
+
+    --nav-background-color:var(--primary-color);
+    --nav-link-color:var(--secondary-color);
+    --nav-hover-link-color:var(--accent1-color);
+    --nav-hover-background-color:var(--accent2-color);
+}
 *{ 
     margin:0;
     padding:0;
     box-sizing: border-box;
 }
+
 .box{
     margin: 1rem;
     border: 1px solid rgba(0,0,0,.1);
@@ -30,20 +44,7 @@ body {
     max-width: 960px;
     padding: 20px;
 }
-:root{
-    --primary-color: #05668d;
-    --secondary-color: #00a896;
-    --accent1-color: #244f26;
-    --accent2-color: #cae9ff;
 
-    --heading-font:"roboto", serif;
-    --paragraph-font:"roboto", serif;
-
-    --nav-background-color:var(--primary-color);
-    --nav-link-color:var(--secondary-color);
-    --nav-hover-link-color:var(--accent1-color);
-    --nav-hover-background-color:var(--accent2-color);
-}
 h1, h2, h3, h4, h5, h6{
     font-family:var(--heading-font);
     color:var(--primary-color)
