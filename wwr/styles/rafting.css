@@ -18,6 +18,26 @@
     --nav-hover-link-color:var(--accent1-color);
     --nav-hover-background-color:var(--accent2-color);
 }
+header{
+    padding:20px;
+    background-color: var(#ffffff);
+    margin:1rem auto;
+    display: grid;
+    grid-template-columns: 120px 1fr 2fr;
+    align-items: center;
+    border-bottom:1px solid #ccc;
+    max-width:1000px;
+}
+.logo img{
+    margin:0 0.25rem 0 1rem;
+    width:64px;
+    height:auto;
+
+h1{
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+}
 .hero img{
     position: relative;
     display:block;
@@ -33,13 +53,32 @@ nav{
     background-color:var(--nav-background-color);
     font-size: 1.2rem;
     display: flex;
+    text-align: right;
+}
+.navigaton{
+    display: flex;
+    list-style: none;
+}
+.navigation li{
+    flex:1 1 100%;
+}
+.navigation a{
+    display:block;
+    color: navy;
+    padding:20px;
+    text-decoration: none;
+}
+.navigation a:hover {
+    color:tomato;
+    font-weight: 700;
+    text-decoration: underline;
 }
 nav :link, nav a:visited{
     color:var(--nav-link-color);
 }
 nav :hover {
-        color:var(--nav-hover-link-color);
-        background-color: var(--nav-hover-background-color);
+    color:var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
 }
 h1, h2, h3, h4, h5, h6{
     margin: 0;
@@ -47,12 +86,5 @@ h1, h2, h3, h4, h5, h6{
     position:absolute;
     font-family:var(--heading-font);
     color:var(--primary-color)
-}
-header{
-    padding:20px;
-    background-color: var(#ffffff);
-}
-p{
-    padding:25px;
 }
 
