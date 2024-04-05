@@ -4,6 +4,11 @@
     font-weight: 400;
     font-style: normal;
 }
+*{ 
+    margin:1px;
+    padding: 1px;;
+    box-sizing: border-box;
+}
 :root{
     --primary-color: #05668d;
     --secondary-color: #00a896;
@@ -21,8 +26,8 @@
 header{
     padding:20px;
     background-color: var(white);
-    margin:1rem auto;
-    display: grid;
+    margin:0 auto;
+    display: flex;
     grid-template-columns: 120px 1fr 2fr;
     align-items: center;
     border-bottom:1px solid #ccc;
@@ -33,44 +38,63 @@ header{
     width:64px;
     height:auto;
 }
-h1{
+h1,h2,h3{
     font-size: 2rem;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 .hero img{
-    position: relative;
-    display:block;
-    margin:0 auto;
+    position: flex;
+    display:flex;
+    margin:0;
     width:100%;
     height:auto;
 }
+.flexbox-container-1{
+    display:flex;
+    justify-content: center;
+}
+.flexbox-item-1{
+    font-family: "roboto", sans-serif;
+    width:100px;
+    border: 1px solid rgb(0, 0, 0);
+    margin: 10px;
+    background-color: white;
+}
+.flexbox-item-2{
+    font-family: "roboto", sans-serif;
+    width:100px;
+    border: 1px solid rgb(0, 0, 0);
+    margin: 10px;
+    background-color: white;
+    
+}.flexbox-item-3{
+    font-family: "roboto", sans-serif;
+    width:100px;
+    border: 1px solid rgb(0, 0, 0);
+    margin: 10px;
+    background-color: white;
+    
+}.flexbox-item-4{
+    font-family: "roboto", sans-serif;
+    width: 100px;
+    border: 1px solid rgb(0, 0, 0);
+    margin: 10px;
+    background-color: white;
+    
+}
+.flexbox-container-2{
+    display: flex;
+    justify-content: center;
+
+} 
 nav{
-    display:block;
+    display:right;
     color:var(--nav-link-color);
     text-decoration:none;
     padding: 1rem;
     background-color:var(--nav-background-color);
     font-size: 1.2rem;
-    display: flex;
-    text-align: right;
-}
-.navigaton{
-    display: flex;
-    list-style: none;
-}
-.navigation li{
-    flex:1 1 100%;
-}
-.navigation a{
-    display:block;
-    color: navy;
-    padding:20px;
-    text-decoration: none;
-}
-.navigation a:hover {
-    color:tomato;
-    font-weight: 700;
-    text-decoration: underline;
+    text-align: auto;
 }
 nav :link, nav a:visited{
     color:var(--nav-link-color);
@@ -78,12 +102,5 @@ nav :link, nav a:visited{
 nav :hover {
     color:var(--nav-hover-link-color);
     background-color: var(--nav-hover-background-color);
-}
-h1, h2, h3, h4, h5, h6{
-    margin: 0;
-    padding: 20px 0;
-    position:absolute;
-    font-family:var(--heading-font);
-    color:var(--primary-color)
 }
 
