@@ -124,7 +124,7 @@ h3{
     font-family: "Roboto", sans-serif;
 }
 form{
-    width: 500px;
+    width: 650px;
     margin: 0 auto;
     padding: 1rem;
     border:1px solid rgba(0,0,0,0.1);
@@ -150,7 +150,7 @@ label{
     text-align:left;
     padding-right:1rem;
 }
-input, select, textarea{
+input, textarea{
     padding: 0.5rem;
     font-size:1.1rem;
 }
