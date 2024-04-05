@@ -19,13 +19,13 @@
     --paragraph-font:"roboto", serif;
 
     --nav-background-color:var(--primary-color);
-    --nav-link-color:var(black);
+    --nav-link-color:rgb(0, 0, 0);
     --nav-hover-link-color:var(--accent1-color);
     --nav-hover-background-color:var(--accent2-color);
 }
 header{
     padding:20px;
-    background-color: var(rgb(170, 170, 170));
+    background-color: rgb(255, 255, 255);
     margin:0 auto;
     display: flex;
     grid-template-columns: 120px 1fr 2fr;
@@ -44,7 +44,6 @@ h1{
     font-family: "Roboto", sans-serif;
 }
 .hero img{
-    position: flex;
     display:flex;
     margin:0;
     width:100%;
@@ -80,14 +79,14 @@ h1{
     
 }
 .flexbox-container-1{
-    size:flex;
+    resize:flex;
     display: flex;
     justify-content: center;
 }
 .raftingphotos{
     width: auto;
     height: auto;
-    size:flex;
+    resize:flex;
     display:flex;
     justify-content: center;
 }
@@ -99,13 +98,11 @@ h1{
     display:flex
 }
 nav{
-    display:right;
     color:var(--nav-link-color);
     text-decoration:none;
     padding: 1rem;
     background-color:var(--nav-background-color);
     font-size: 1.2rem;
-    text-align: auto;
 }
 nav :link, nav a:visited{
     color:var(--nav-link-color);
