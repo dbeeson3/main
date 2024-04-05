@@ -5,9 +5,9 @@
     font-style: normal;
 }
 *{ 
-    margin:1px;
-    padding: 1px;;
-    box-sizing: border-box;
+    margin:3px;
+    border: 3px;
+    padding: 2px;;
 }
 :root{
     --primary-color: #05668d;
@@ -19,13 +19,13 @@
     --paragraph-font:"roboto", serif;
 
     --nav-background-color:var(--primary-color);
-    --nav-link-color:var(--secondary-color);
+    --nav-link-color:var(black);
     --nav-hover-link-color:var(--accent1-color);
     --nav-hover-background-color:var(--accent2-color);
 }
 header{
     padding:20px;
-    background-color: var(white);
+    background-color: var(rgb(170, 170, 170));
     margin:0 auto;
     display: flex;
     grid-template-columns: 120px 1fr 2fr;
@@ -38,7 +38,8 @@ header{
     width:64px;
     height:auto;
 }
-h1,h2,h3{
+h1{
+    color:#244f26;
     font-size: 2rem;
     font-family: "Roboto", sans-serif;
 }
@@ -48,10 +49,6 @@ h1,h2,h3{
     margin:0;
     width:100%;
     height:auto;
-}
-.flexbox-container-1{
-    display:flex;
-    justify-content: center;
 }
 .flexbox-item-1{
     font-family: "roboto", sans-serif;
@@ -82,11 +79,25 @@ h1,h2,h3{
     background-color: white;
     
 }
-.flexbox-container-2{
+.flexbox-container-1{
+    size:flex;
     display: flex;
     justify-content: center;
-
-} 
+}
+.raftingphotos{
+    width: auto;
+    height: auto;
+    size:flex;
+    display:flex;
+    justify-content: center;
+}
+.employees{
+    display:flex;
+    justify-content: center;
+}
+.client{
+    display:flex
+}
 nav{
     display:right;
     color:var(--nav-link-color);
@@ -103,4 +114,12 @@ nav :hover {
     color:var(--nav-hover-link-color);
     background-color: var(--nav-hover-background-color);
 }
-
+h2{ 
+    color:var(--primary-color);
+    font-size: 1.2rem;
+    font-family: "Roboto", sans-serif;
+}
+h3{ 
+    font-size: 1rem;
+    font-family: "Roboto", sans-serif;
+}
